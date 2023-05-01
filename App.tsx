@@ -13,7 +13,7 @@ export default function App1(){
       <Header text="Reportar"/>
       <View style={styles.body}>
         {/* <Icon name="check" size={20}/> */}
-        <View style={{marginTop: 12}}>
+        <View style={{marginTop: 0}}>
           <CheckBox text="O Profissional não compareceu."/>
           <CheckBox text="O Profissional não prestou um bom serviço."/>
           <CheckBox text="Outro."/>
@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
     borderColor: '#6D7A78',
     width: 300,
     height: 50,
-    marginLeft: 25,
     marginTop: 20,
     paddingLeft: 20,
     paddingRight: 20,
@@ -51,12 +50,15 @@ const styles = StyleSheet.create({
     borderColor: '#6D7A78',
     width: 300,
     textAlignVertical: 'top',
-    marginLeft: 25,
     marginTop: 20,
     paddingRight: 20,
     paddingLeft: 20,
   },
   body:{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    // alignItems: 'center',
     backgroundColor: '#F8F8F8',
     height: '100%'
   },

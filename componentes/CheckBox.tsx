@@ -20,6 +20,7 @@ export default function CheckBox(props: any){
 const styles = StyleSheet.create({
     container:{
         display: 'flex',
+        width: 300,
         flexDirection: 'row',
         alignItems: 'flex-start',
         marginTop: 15
@@ -31,7 +32,6 @@ const styles = StyleSheet.create({
         borderColor: "#E2E2E2",
         borderRadius: 5,
         marginRight: 10,
-        marginLeft: 25,
         overflow: 'hidden',
     },
     check:{
